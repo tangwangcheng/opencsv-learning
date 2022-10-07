@@ -1,11 +1,8 @@
 package com.opencsv.one2list;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.opencsv.bean.AbstractCsvConverter;
 import lombok.SneakyThrows;
-
-import java.util.Map;
 
 public class TextToTeacher  extends AbstractCsvConverter{
     @Override
@@ -21,7 +18,6 @@ public class TextToTeacher  extends AbstractCsvConverter{
     @SneakyThrows
     @Override
     public String convertToWrite(Object value) {
-        String string = new ObjectMapper().writeValueAsString(value);
         // 转化存储格式
         Teacher t = (Teacher) value;
         return String.format("%s.%s", t.getSalutation(), t.getSurname());

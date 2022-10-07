@@ -1,15 +1,10 @@
 package com.opencsv.one2list2any;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.type.TypeFactory;
 import com.opencsv.bean.AbstractCsvConverter;
 import com.opencsv.exceptions.CsvConstraintViolationException;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
-import com.opencsv.one2list.Teacher;
 import lombok.SneakyThrows;
-
-import java.util.ArrayList;
 
 public class TextToBook extends AbstractCsvConverter {
     private static ObjectMapper objectMapper = new ObjectMapper();
