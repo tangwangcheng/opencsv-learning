@@ -1,0 +1,14 @@
+{
+  "studentID": 100,
+  "name": "zhangsan",
+  "teachers": [
+    {
+      "salutation": "jack",
+      "surname": "tang"
+    },
+    {
+      "salutation": "mary",
+      "surname": "li"
+    }
+  ]
+}
